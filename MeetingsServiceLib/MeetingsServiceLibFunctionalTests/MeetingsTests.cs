@@ -25,7 +25,7 @@ namespace MeetingsServiceLibFunctionalTests
             meetingDataD = new MeetingData("DD", "DD", "2005-06-05 22:12", 10);
 
             localMeetingsRepository = new MeetingsServiceLib.LocalMeetingsRepository();
-            service = new MeetingsServiceLib.Service(localMeetingsRepository);
+            service = new MeetingsServiceLib.Service(localMeetingsRepository, null);
         }
 
         [TestMethod]

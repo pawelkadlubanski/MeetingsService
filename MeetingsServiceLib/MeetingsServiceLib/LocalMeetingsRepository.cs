@@ -13,13 +13,9 @@ namespace MeetingsServiceLib
             meetingList = new List<Meeting>();
         }
 
-        public bool addMetting(Meeting meeting)
+        public void addMetting(Meeting meeting)
         {
-            if (!meetingList.Contains(meeting))
-            {
-                meetingList.Add(meeting);
-            }
-            return true;
+             meetingList.Add(meeting);
         }
 
         public List<Meeting> getAllMeetings()
