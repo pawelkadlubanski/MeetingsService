@@ -10,17 +10,21 @@ namespace MeetingsServiceLib
     {
         private MeetingFactory meetingFactory;
         private UserFactory userFactory;
+        private ParticipationFactory participationFactory;
 
         private IMeetingsRepository meetingsRepository;
         private IUserRepository userRepository;
+        private IParticipationRepository participationRepository;
 
-        public Service(IMeetingsRepository meetingsRepository, IUserRepository userRepository)
+        public Service(IMeetingsRepository meetingsRepository, IUserRepository userRepository, IParticipationRepository participationRepository)
         {
             meetingFactory = new MeetingFactory();
             userFactory = new UserFactory();
+            participationFactory = new ParticipationFactory();
 
             this.meetingsRepository = meetingsRepository;
             this.userRepository = userRepository;
+            this.participationRepository = participationRepository;
         }
 
         public void addMeeting(String name, String location, string date, int maxNumberOfParticipants)
@@ -72,6 +76,45 @@ namespace MeetingsServiceLib
         public void removeUser(string name)
         {
             userRepository.removeUser(name);
+        }
+
+        public void signUpUserToMeeting(string login, string name)
+        {
+
+            var meeting = this.getMeetingsByName(name);
+            if (meeting == null || meeting.NumberOfFreePlaces == 0)
+                return;
+
+            var user = this.getUserByLogin(login);
+            if (user == null)
+                return;
+
+            var participation = participationFactory.create(login, name);
+            participationRepository.addParticipations(participation);
+            meeting.NumberOfFreePlaces -= 1;
+        }
+
+        public List<Meeting> getUserMeetings(string UserLogin)
+        {
+            var usersMeeting = new List<Meeting>();
+            var usersParticipations = participationRepository.getUserMeetings(UserLogin);
+            foreach (var participation in usersParticipations)
+            {
+                usersMeeting.Add(this.getMeetingsByName(participation.MeetingName));
+            }
+            return usersMeeting;
+        }
+
+        public List<User> getMeetingParticipants(string meetingName)
+        {
+            var participans = new List<User>();
+            var participations = participationRepository.getMeetingParticipants(meetingName);
+            foreach(var participation in participations)
+            {
+                participans.Add(this.getUserByLogin(participation.UserLogin));
+            }
+
+            return participans;
         }
     }
 }

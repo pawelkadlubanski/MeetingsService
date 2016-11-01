@@ -13,8 +13,8 @@ namespace MeetingsServiceLibFunctionalTests
         MeetingData meetingDataC;
         MeetingData meetingDataD;
 
-        private MeetingsServiceLib.Service service;
-        private MeetingsServiceLib.IMeetingsRepository localMeetingsRepository;
+        private Service service;
+        private IMeetingsRepository localMeetingsRepository;
 
         [TestInitialize]
         public void Initialize()
@@ -25,7 +25,7 @@ namespace MeetingsServiceLibFunctionalTests
             meetingDataD = new MeetingData("DD", "DD", "2005-06-05 22:12", 10);
 
             localMeetingsRepository = new MeetingsServiceLib.LocalMeetingsRepository();
-            service = new MeetingsServiceLib.Service(localMeetingsRepository, null);
+            service = new MeetingsServiceLib.Service(localMeetingsRepository, null, null);
         }
 
         [TestMethod]

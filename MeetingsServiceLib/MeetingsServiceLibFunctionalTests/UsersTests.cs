@@ -16,7 +16,7 @@ namespace MeetingsServiceLibFunctionalTests
         public void Initialize()
         {
             localUserRepository = new LocalUserRepository();
-            service = new Service(null, localUserRepository);
+            service = new Service(null, localUserRepository, null);
         }
 
         [TestMethod]

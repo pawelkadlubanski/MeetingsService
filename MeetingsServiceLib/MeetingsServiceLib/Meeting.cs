@@ -8,6 +8,7 @@ namespace MeetingsServiceLib
         public string Location { get; set; }
         public DateTime Time { get; set; }
         public int MaxNumberOfParticipants { get; set; }
+        public int NumberOfFreePlaces { get; set; }
 
         public override bool Equals(System.Object obj)
         {

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="MeetingData.cs" />
     <Compile Include="MeetingsTests.cs" />
+    <Compile Include="ParticipationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserData.cs" />
     <Compile Include="UsersTests.cs" />

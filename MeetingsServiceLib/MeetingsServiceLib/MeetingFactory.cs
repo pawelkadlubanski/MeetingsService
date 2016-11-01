@@ -17,6 +17,7 @@ namespace MeetingsServiceLib
             meeting.Location = location;
             meeting.Time = convertedDate.Value;
             meeting.MaxNumberOfParticipants = maxNumberOfParticipants;
+            meeting.NumberOfFreePlaces = meeting.MaxNumberOfParticipants;
 
             return meeting;
         }

@@ -41,11 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IMeetingsRepository.cs" />
+    <Compile Include="IParticipationRepository.cs" />
     <Compile Include="IUserRepository.cs" />
     <Compile Include="LocalMeetingsRepository.cs" />
+    <Compile Include="LocalParticipationRepository.cs" />
     <Compile Include="LocalUserRepository.cs" />
     <Compile Include="Meeting.cs" />
     <Compile Include="MeetingFactory.cs" />
+    <Compile Include="Participation.cs" />
+    <Compile Include="ParticipationFactory.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
