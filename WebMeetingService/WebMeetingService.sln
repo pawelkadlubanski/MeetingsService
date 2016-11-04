@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMeetingService", "WebMeetingService\WebMeetingService.csproj", "{09705752-9E86-4277-B2EC-FF5841CB49ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMeetingService", "WebMeetingService\WebMeetingService.csproj", "{31EAA5B9-1BF5-4258-B8EC-7AEC33279E39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingsServiceLib", "..\MeetingsServiceLib\MeetingsServiceLib\MeetingsServiceLib.csproj", "{B05CA2DA-5F23-43ED-B59D-60A8BFEBFAB7}"
 EndProject
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{09705752-9E86-4277-B2EC-FF5841CB49ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09705752-9E86-4277-B2EC-FF5841CB49ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09705752-9E86-4277-B2EC-FF5841CB49ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09705752-9E86-4277-B2EC-FF5841CB49ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EAA5B9-1BF5-4258-B8EC-7AEC33279E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EAA5B9-1BF5-4258-B8EC-7AEC33279E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EAA5B9-1BF5-4258-B8EC-7AEC33279E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EAA5B9-1BF5-4258-B8EC-7AEC33279E39}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B05CA2DA-5F23-43ED-B59D-60A8BFEBFAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B05CA2DA-5F23-43ED-B59D-60A8BFEBFAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05CA2DA-5F23-43ED-B59D-60A8BFEBFAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
