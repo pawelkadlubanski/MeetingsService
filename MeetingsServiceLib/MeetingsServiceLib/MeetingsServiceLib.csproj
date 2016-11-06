@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbMeetingRepository.cs" />
+    <Compile Include="DbUserRepository.cs" />
     <Compile Include="IMeetingsRepository.cs" />
     <Compile Include="IParticipationRepository.cs" />
     <Compile Include="IUserRepository.cs" />

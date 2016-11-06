@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingsServiceLib", "Meeti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingsServiceLibFunctionalTests", "MeetingsServiceLibFunctionalTests\MeetingsServiceLibFunctionalTests.csproj", "{BBE76F3D-9CAC-45CF-9762-8C54C151AD21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingsServiceLibDbIntegrationTests", "MeetingsServiceLibDbIntegrationTests\MeetingsServiceLibDbIntegrationTests.csproj", "{1AA99908-759B-45F4-8459-F8BCBBD67831}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BBE76F3D-9CAC-45CF-9762-8C54C151AD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBE76F3D-9CAC-45CF-9762-8C54C151AD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBE76F3D-9CAC-45CF-9762-8C54C151AD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA99908-759B-45F4-8459-F8BCBBD67831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA99908-759B-45F4-8459-F8BCBBD67831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA99908-759B-45F4-8459-F8BCBBD67831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA99908-759B-45F4-8459-F8BCBBD67831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
